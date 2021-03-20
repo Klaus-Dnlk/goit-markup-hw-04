@@ -156,8 +156,14 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* .envelope-icon::before {
+  width: 16px;
+  height: 12px;
+  fill: var(--main-text-color);
+} */
+
 .contact-nav .link {
-  display: block;
+  display: inline-flex;
   padding-top: 21px;
   padding-bottom: 21px;
 
@@ -172,6 +178,34 @@ body {
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
+}
+
+.link.mail::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  background-image: url(/images/svg/envelope.svg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-nav .cell::before {
+  content: '';
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+
+  background-image: url(/images/svg/smartphone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* hero */
