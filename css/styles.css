@@ -277,7 +277,7 @@ body {
   /* outline: 2px solid teal; */
 }
 
-.feature-title {
+.feature-list .feature-title {
   display: inline-flex;
   margin-top: 30px;
   color: var(--title-text-color);
