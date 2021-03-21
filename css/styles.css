@@ -157,14 +157,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* .envelope-icon::before {
-  width: 16px;
-  height: 12px;
-  fill: var(--main-text-color);
-} */
-
 .contact-nav .link {
   display: inline-flex;
+  align-items: center;
   padding-top: 21px;
   padding-bottom: 21px;
 
@@ -176,37 +171,17 @@ body {
   letter-spacing: 0.02em;
 }
 
+.contact-nav .mail-icon,
+.contact-nav .cell-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
-}
-
-.link.mail::before {
-  content: '';
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
-  align-items: center;
-  background-image: url(/images/svg/envelope.svg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contact-nav .cell::before {
-  content: '';
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
-  align-items: center;
-
-  background-image: url(/images/svg/smartphone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* hero */
@@ -364,31 +339,16 @@ body {
   background-color: #f5f4fa;
 }
 .container .team-list {
-  /* width: 1600px; */
-  /* padding-top: 94px; */
   padding-bottom: 94px;
-  /* padding-left: 215px;
-  padding-right: 215px; */
 }
 
 .team .container {
   padding-top: 94px;
 }
-.team-title {
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 
 .container .team-list {
   display: flex;
   justify-content: space-between;
-
-  width: 1200px;
 }
 
 .team-list .item {
@@ -410,6 +370,16 @@ body {
 
 .team-list .name > p {
   margin-top: 10px;
+}
+
+.team-title {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* social linkk in team card */
