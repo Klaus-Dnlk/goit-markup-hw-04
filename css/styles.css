@@ -429,13 +429,9 @@ body {
 }
 
 /* permanent clients */
-.section.clients * {
-  /* outline: 2px solid teal; */
-}
 
 .clients-list {
   display: flex;
-  /* height: 90px; */
   padding: 0;
   margin: 0;
   justify-content: space-between;
@@ -444,7 +440,6 @@ body {
 .clients-list .item {
   display: inline-flex;
   width: calc(100% - (30px * 5) / 6);
-  height: 90px;
 
   justify-content: center;
   align-items: center;
@@ -453,11 +448,6 @@ body {
   border-radius: 4px;
 }
 
-.clients-list .link {
-  display: inline-flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .clients-list .item:hover,
 .clients-list .item:focus {
   border: 1px solid var(--accent-color);
@@ -467,6 +457,8 @@ body {
 }
 
 .clients-list .client-icon {
+  width: 170px;
+  height: 90px;
   fill: var(--main-icon-color);
 }
 
