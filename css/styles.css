@@ -277,10 +277,12 @@ body {
   /* outline: 2px solid teal; */
 }
 
-.feature-list .feature-title {
+.feature-title {
   display: inline-flex;
   margin-top: 30px;
+  color: var(--title-text-color);
 }
+
 .section-title {
   margin-bottom: 50px;
   font-weight: bold;
@@ -310,9 +312,8 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-.feature-title {
-  margin: 0 0 10px 0;
-  color: var(--title-text-color);
+
+
 
   font-weight: bold;
   font-size: 14px;
